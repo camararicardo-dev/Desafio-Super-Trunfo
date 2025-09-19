@@ -45,6 +45,7 @@ int main() {
         scanf("%f", &pibp2);
 
         // Seção de exibição dos dados coletados;
+        // Exibir Informações das cartas
 
         printf("Exibindo informações registradas.....\n");
 

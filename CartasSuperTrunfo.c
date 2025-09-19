@@ -11,8 +11,8 @@ int main() {
         float pibp1, pibp2;
 
         //Variaveis do desafio iniciante
-        char estado1, codcarta1, nome_cidade1;
-        char estado2, codcarta2, nome_cidade2;
+        char estado1[10], codcarta1[10], nome_cidade1[10];
+        char estado2[10], codcarta2[10], nome_cidade2[10];
         float densidade_populacional1, densidade_populacional2;
         float pib_percapita1, pib_percapita2;
 
@@ -57,7 +57,6 @@ int main() {
 
          //Segundo país
         printf("Cadastro das informações da carta do segundo país, insira as infromações conforme solicitadas na tela!\n");
-
 
         printf("Digite a população  da segunda carta:\n");
         scanf("%d",&populacaop2);
@@ -104,8 +103,6 @@ int main() {
         printf("Possui area de %f \n", areap1);
         printf("Seu PIB é no valor de:%f \n", pibp1);
 
-
-
         // Carta 2
 
         printf("Dados da segunda carta:\n");
@@ -118,23 +115,23 @@ int main() {
         //comparação entre as cartas e exibição das informaçoes da vencedora.
 
         //Comparação do atributo escolhido (PIB)
+         
         if (pib_percapita1 > pib_percapita2){
+          
             printf("Carta 1 - %s: %f \n",nome_cidade1,pib_percapita1);
             printf(" Carta 1 - %s Venceu!\n",nome_cidade1);
 
-        } else {
-            if (pib_percapita1 = pib_percapita2){
+        }  else if (pib_percapita1 == pib_percapita2){
+            
+            
             printf("Carta 1 - %s: %f \n",nome_cidade1,pib_percapita1);
             printf("Carta 2 - %s: %f \n",nome_cidade2,pib_percapita2);
             printf(" Houve um empate");
-
-        } else{
-
+            
+        } else {
             printf("Carta 2 - %s: %f \n",nome_cidade2,pib_percapita2);
             printf(" Carta 2 - %s Venceu!\n",nome_cidade2);
         }
-        }
-
 
     return 0;
 }

@@ -4,22 +4,22 @@ int main() {
 
     //Declaração das variaveis;
 
-        //Variaveis do primeiro desafio
+        
         int populacaop1, populacaop2;
         int pontoturisticop1, pontoturisticop2;
         float areap1, areap2;
         float pibp1, pibp2;
-
-        //Variaveis do desafio iniciante
+        int atributo1,atributo2;
+        
         char estado1[10], codcarta1[10], nome_cidade1[10];
         char estado2[10], codcarta2[10], nome_cidade2[10];
         float densidade_populacional1, densidade_populacional2;
         float pib_percapita1, pib_percapita2;
 
 
-    // Seção de inserção de dados pelo usuário
+    // Seção de inserção de dados das cartas pelo usuário
 
-        //Primeiro pais
+        //Primeira Carta
         printf("Cadastro das informações da carta da primeira cidade, insira as informações conforme solicitadas na tela! \n");
 
         printf("Digite a população da primeira primeira carta:\n");
@@ -93,6 +93,42 @@ int main() {
         // Seção de exibição dos dados coletados;
         // Exibir Informações das cartas
 
+        // Seção para seleção dos atibutos a serem comparados
+
+        printf("Selecione abaixo dois atributos para realizar as comparações, selecione um numero correspondente ao atributo:");
+        printf("Seleção do primeiro atibuto:\n");
+        printf("1-População\n");
+        printf("2-Area\n");
+        printf("3-PIB\n");
+        printf("4-Número de pontos turisticos\n");
+        printf("5-Densidade demografica\n");
+        scanf("%d", &atributo1);
+
+        switch (atributo1)
+        {
+        case 1:
+            /* code */
+            break;
+
+        case 2:
+            /* code */
+            break;
+        case 3:
+            /* code */
+            break;
+        case 4:
+            /* code */
+            break;
+        case 5:
+            /* code */
+            break;
+        
+        default:
+            //Mensagem para informar uma opção invalida
+            printf("Você selecionou uma opção invalida!!! Digite um dos valores informados\n");
+            break;
+        }
+
         printf("Exibindo informações registradas.....\n");
 
         // Carta 1
@@ -110,7 +146,6 @@ int main() {
         printf("Possui %d pontos turisticos \n", pontoturisticop2);
         printf("Possui area de %f \n", areap2);
         printf("Seu PIB é no valor de:%f \n", pibp2);
-
 
         //comparação entre as cartas e exibição das informaçoes da vencedora.
 
@@ -135,3 +170,4 @@ int main() {
 
     return 0;
 }
+

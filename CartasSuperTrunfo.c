@@ -19,9 +19,7 @@ int main() {
         
         
         //variaveis para soma de atributos selecionados
-        int valor_atributo1int, valor_atributo2int =0;
-        float valor_atributo1float, valor_atributo2float =0;
-
+        float valorc1_atributo1, valorc1_atributo2, valorc2_atributo1, valorc2_atributo2 =0;
 
         char estado1[10], codcarta1[10], nome_cidade1[10];
         char estado2[10], codcarta2[10], nome_cidade2[10];
@@ -127,7 +125,8 @@ int main() {
                 //Exibir atributo selecionado
                 printf("Primeiro atributo escolhido: População");
                 //Guardar valor do atributo selecionado
-                valor_atributo1int= populacaop1;
+                valorc1_atributo1= populacaop1;
+                valorc2_atributo1= populacaop2;
 
             if (populacaop1 > populacaop2){
                 resultado1=1;
@@ -145,7 +144,8 @@ int main() {
                 //Exibir atributo selecionado
                 printf("Primeiro atributo escolhido: Area");
                 //Guardar valor do atributo selecionado
-                valor_atributo1float= areap1;
+                valorc1_atributo1= areap1;
+                valorc2_atributo1= areap2;
              
              if (areap1 > areap2){
                 resultado1=1;
@@ -163,7 +163,8 @@ int main() {
                 //Exibir atributo selecionado
                 printf("Primeiro atributo escolhido: PIB");
                 //Guardar valor do atributo selecionado
-                valor_atributo1float= pibp1;
+                valorc1_atributo1= pibp1;
+                valorc2_atributo1= pibp2;
             
            if (pibp1 > pibp2){
                 resultado1=1;
@@ -181,8 +182,8 @@ int main() {
                 //Exibir atributo selecionado
                 printf("Primeiro atributo escolhido: Número de pontos turisticos");
                 //Guardar valor do atributo selecionado
-                valor_atributo1int= pontoturisticop1;
-
+                valorc1_atributo1= pontoturisticop1;
+                valorc2_atributo1= pontoturisticop2;
    
             if (pontoturisticop1 > pontoturisticop2){
                 resultado1=1;
@@ -200,7 +201,8 @@ int main() {
                 //Exibir atributo selecionado
                 printf("Primeiro atributo escolhido: Densidade demografica");
                 //Guardar valor do atributo selecionado
-                valor_atributo1float= densidade_populacional1;
+                valorc1_atributo1= densidade_populacional1;
+                valorc2_atributo1= densidade_populacional2;
             
             if (densidade_populacional1 < densidade_populacional2){
                 resultado1=1;
@@ -243,7 +245,8 @@ int main() {
                      //Exibir atributo selecionado
                      printf("Segundo atributo escolhido: Área");
                      //Guardar valor do atributo selecionado
-                     valor_atributo2float= areap2;
+                     valorc1_atributo2= areap1;
+                     valorc2_atributo2= areap2;
                     
                     if (areap1 > areap2){
                         resultado2=1;
@@ -261,7 +264,9 @@ int main() {
                      //Exibir atributo selecionado
                      printf("Segundo atributo escolhido: PIB");
                      //Guardar valor do atributo selecionado
-                     valor_atributo2float= pibp2;
+              
+                      valorc1_atributo2= pibp1;
+                      valorc2_atributo2= pibp2;
 
                 if (pibp1 > pibp2){
                         resultado2=1;
@@ -280,7 +285,10 @@ int main() {
                         //Exibir atributo selecionado
                         printf("Segundo atributo escolhido: Número de pontos turisticos");
                         //Guardar valor do atributo selecionado
-                        valor_atributo2int= pontoturisticop2;
+                       
+
+                         valorc1_atributo2= pontoturisticop1;
+                         valorc2_atributo2= pontoturisticop2;
                    
                     if (pontoturisticop1 > pontoturisticop2){
                         resultado2=1;
@@ -298,7 +306,9 @@ int main() {
                         //Exibir atributo selecionado
                         printf("Segundo atributo escolhido: Densidade demografica");
                         //Guardar valor do atributo selecionado
-                        valor_atributo2float= densidade_populacional2;
+                        
+                         valorc1_atributo2= densidade_populacional1;
+                         valorc2_atributo2= densidade_populacional2;
                    
                     if (densidade_populacional1 < densidade_populacional2){
                         resultado2=1;
@@ -335,7 +345,9 @@ int main() {
                         //Exibir atributo selecionado
                         printf("Segundo atributo escolhido: População");
                         //Guardar valor do atributo selecionado
-                        valor_atributo2int= populacaop2;
+                        
+                         valorc1_atributo2= populacaop1;
+                         valorc2_atributo2= populacaop2;
                         
                         if (populacaop1 > populacaop2){
                             resultado2=1;
@@ -353,7 +365,9 @@ int main() {
                         //Exibir atributo selecionado
                         printf("Segundo atributo escolhido: PIB");
                         //Guardar valor do atributo selecionado
-                        valor_atributo2float= pibp2;
+
+                         valorc1_atributo2= pibp1;
+                         valorc2_atributo2= pibp2;
 
                        
                     if (pibp1 > pibp2){
@@ -372,7 +386,10 @@ int main() {
                         //Exibir atributo selecionado
                         printf("Segundo atributo escolhido: Número de pontos turisticos");
                         //Guardar valor do atributo selecionado
-                        valor_atributo2int= pontoturisticop2;
+                 
+
+                         valorc1_atributo2= pontoturisticop1;
+                         valorc2_atributo2= pontoturisticop2;
 
                         
                         if (pontoturisticop1 > pontoturisticop2){
@@ -391,7 +408,9 @@ int main() {
                         //Exibir atributo selecionado
                         printf("Segundo atributo escolhido: Densidade demografica");
                         //Guardar valor do atributo selecionado
-                        valor_atributo2float= densidade_populacional2;
+                        
+                         valorc1_atributo2= densidade_populacional1;
+                         valorc2_atributo2= densidade_populacional2;
                         
                         if (densidade_populacional1 < densidade_populacional2){
                             resultado2=1;
@@ -430,7 +449,10 @@ int main() {
                         //Exibir atributo selecionado
                         printf("Segundo atributo escolhido: População");
                         //Guardar valor do atributo selecionado
-                        valor_atributo2int= populacaop2;
+                     
+
+                         valorc1_atributo2= populacaop1;
+                         valorc2_atributo2= populacaop2;
 
                         if (populacaop1 > populacaop2){
                             resultado2=1;
@@ -448,7 +470,9 @@ int main() {
                         //Exibir atributo selecionado
                         printf("Segundo atributo escolhido: Área");
                         //Guardar valor do atributo selecionado
-                        valor_atributo2float= areap2;
+
+                         valorc1_atributo2= areap1;
+                         valorc2_atributo2= areap2;
                        
                         if (areap1 > areap2){
                             resultado2=1;
@@ -466,7 +490,9 @@ int main() {
                         //Exibir atributo selecionado
                         printf("Segundo atributo escolhido: Número de pontos turisticos");
                         //Guardar valor do atributo selecionado
-                        valor_atributo2int= pontoturisticop2;
+                       
+                         valorc1_atributo2= pontoturisticop1;
+                         valorc2_atributo2= pontoturisticop2;
                       
                         if (pontoturisticop1 > pontoturisticop2){
                             resultado2=1;
@@ -485,7 +511,10 @@ int main() {
                         //Exibir atributo selecionado
                         printf("Segundo atributo escolhido: Densidade demografica");
                         //Guardar valor do atributo selecionado
-                        valor_atributo2float= densidade_populacional2;
+                      
+
+                         valorc1_atributo2= densidade_populacional1;
+                         valorc2_atributo2= densidade_populacional2;
                        
                         if (densidade_populacional1 < densidade_populacional2){
                             resultado2=1;
@@ -521,7 +550,10 @@ int main() {
                             //Exibir atributo selecionado
                             printf("Segundo atributo escolhido: População");
                             //Guardar valor do atributo selecionado
-                            valor_atributo2int= populacaop2;
+                          
+
+                             valorc1_atributo2= populacaop1;
+                             valorc2_atributo2= populacaop2;
                             
                             if (populacaop1 > populacaop2){
                                 resultado2=1;
@@ -539,7 +571,10 @@ int main() {
                             //Exibir atributo selecionado
                            printf("Segundo atributo escolhido: Área");
                            //Guardar valor do atributo selecionado
-                           valor_atributo2float= areap2;
+                          
+
+                            valorc1_atributo2= areap1;
+                            valorc2_atributo2= areap2;
                             
                             if (areap1 > areap2){
                                 resultado2=1;
@@ -557,7 +592,10 @@ int main() {
                             //Exibir atributo selecionado
                             printf("Segundo atributo escolhido: PIB");
                             //Guardar valor do atributo selecionado
-                            valor_atributo2float= pibp2;
+                          
+
+                             valorc1_atributo2= pibp1;
+                             valorc2_atributo2= pibp2;
                        
                         if (pibp1 > pibp2){
                                 resultado2=1;
@@ -576,7 +614,10 @@ int main() {
                             //Exibir atributo selecionado
                             printf("Segundo atributo escolhido: Densidade demografica");
                             //Guardar valor do atributo selecionado
-                            valor_atributo2float= densidade_populacional2;
+                            
+
+                             valorc1_atributo2= densidade_populacional1;
+                             valorc2_atributo2= densidade_populacional2;
                            
                             if (densidade_populacional1 < densidade_populacional2){
                                 resultado2=1;
@@ -612,8 +653,10 @@ int main() {
                                 //Exibir atributo selecionado
                                 printf("Segundo atributo escolhido: População");
                                 //Guardar valor do atributo selecionado
-                                valor_atributo2int= populacaop2;
-                            
+                              
+
+                                 valorc1_atributo2= populacaop1;
+                                 valorc2_atributo2= populacaop2;
                             if (populacaop1 > populacaop2){
                                 resultado2=1;
 
@@ -630,7 +673,10 @@ int main() {
                             //Exibir atributo selecionado
                             printf("Segundo atributo escolhido: Área");
                             //Guardar valor do atributo selecionado
-                            valor_atributo2float= areap2;
+                          
+
+                             valorc1_atributo2= areap1;
+                             valorc2_atributo2= areap2;
                             
                             if (areap1 > areap2){
                                 resultado2=1;
@@ -648,7 +694,11 @@ int main() {
                             //Exibir atributo selecionado
                             printf("Segundo atributo escolhido: PIB");
                             //Guardar valor do atributo selecionado
-                            valor_atributo2float= pibp2;
+                           
+
+
+                             valorc1_atributo2= pibp1;
+                             valorc2_atributo2= pibp2;
                        
                         if (pibp1 > pibp2){
                                 resultado2=1;
@@ -666,7 +716,10 @@ int main() {
                             //Exibir atributo selecionado
                             printf("Segundo atributo escolhido: Número de pontos turisticos");
                             //Guardar valor do atributo selecionado
-                            valor_atributo2int= pontoturisticop2;
+                      
+
+                             valorc1_atributo2= pontoturisticop1;
+                             valorc2_atributo2= pontoturisticop2;
                            
                             if (pontoturisticop1 > pontoturisticop2){
                                 resultado2=1;
@@ -692,11 +745,8 @@ int main() {
         
         // Seção para soma dos atributos
 
-        //soma_atributos1 = populacaop1 + pontoturisticop1 + areap1 + pibp1 + densidade_populacional1;
-        // soma_atributos2 = populacaop2 + pontoturisticop2 + areap2 + pibp2 + densidade_populacional2;
-
-        soma_atributos1 = valor_atributo1int + valor_atributo1float;
-        soma_atributos2 = valor_atributo2int + valor_atributo2float;
+        soma_atributos1 = valorc1_atributo1 + valorc1_atributo2;
+        soma_atributos2 = valorc2_atributo1 + valorc2_atributo2;
 
        // Seção de exibição dos dados coletados;
 

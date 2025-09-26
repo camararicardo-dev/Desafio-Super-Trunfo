@@ -34,4 +34,6 @@ Ao iniciar o programa, cadastre as informações da carta 1 e em seguida as info
 💡Nenhum dos atributos poderá ser escolhido duas vezes
 </aside>
 
+
+
 Ao final, será exibido o resultado das comparações e a carta vencedora

@@ -16,9 +16,13 @@ int main() {
         int resultado1,resultado2;
         //Variabeis para receber soma dos atributos
         float soma_atributos1, soma_atributos2;
-        //Variaveis para receber o nome dos atributos
-        char nome_atributo1[20], nome_atributo2[20];
         
+        
+        //variaveis para soma de atributos selecionados
+        int valor_atributo1int, valor_atributo2int =0;
+        float valor_atributo1float, valor_atributo2float =0;
+
+
         char estado1[10], codcarta1[10], nome_cidade1[10];
         char estado2[10], codcarta2[10], nome_cidade2[10];
         float densidade_populacional1, densidade_populacional2;
@@ -119,7 +123,12 @@ int main() {
         switch (atributo1)
         {
         case 1:
-                nome_atributo1 == "População";
+
+                //Exibir atributo selecionado
+                printf("Primeiro atributo escolhido: População");
+                //Guardar valor do atributo selecionado
+                valor_atributo1int= populacaop1;
+
             if (populacaop1 > populacaop2){
                 resultado1=1;
 
@@ -132,7 +141,12 @@ int main() {
             break;
 
         case 2:
-             nome_atributo1 == "Área";
+
+                //Exibir atributo selecionado
+                printf("Primeiro atributo escolhido: Area");
+                //Guardar valor do atributo selecionado
+                valor_atributo1float= areap1;
+             
              if (areap1 > areap2){
                 resultado1=1;
 
@@ -145,7 +159,12 @@ int main() {
             break;
             
         case 3:
-            nome_atributo1 == "PIB";
+            
+                //Exibir atributo selecionado
+                printf("Primeiro atributo escolhido: PIB");
+                //Guardar valor do atributo selecionado
+                valor_atributo1float= pibp1;
+            
            if (pibp1 > pibp2){
                 resultado1=1;
 
@@ -158,7 +177,13 @@ int main() {
         
             break;
         case 4:
-            nome_atributo1 == "Número de pontos turisticos";
+
+                //Exibir atributo selecionado
+                printf("Primeiro atributo escolhido: Número de pontos turisticos");
+                //Guardar valor do atributo selecionado
+                valor_atributo1int= pontoturisticop1;
+
+   
             if (pontoturisticop1 > pontoturisticop2){
                 resultado1=1;
 
@@ -171,7 +196,12 @@ int main() {
             
             break;
         case 5:
-            nome_atributo1 == "Densidade demografica";
+            
+                //Exibir atributo selecionado
+                printf("Primeiro atributo escolhido: Densidade demografica");
+                //Guardar valor do atributo selecionado
+                valor_atributo1float= densidade_populacional1;
+            
             if (densidade_populacional1 < densidade_populacional2){
                 resultado1=1;
 
@@ -209,7 +239,12 @@ int main() {
             switch (atributo2)
                 {
                 case 2:
-                    nome_atributo2 == "Área";
+                     
+                     //Exibir atributo selecionado
+                     printf("Segundo atributo escolhido: Área");
+                     //Guardar valor do atributo selecionado
+                     valor_atributo2float= areap2;
+                    
                     if (areap1 > areap2){
                         resultado2=1;
 
@@ -222,7 +257,12 @@ int main() {
                     break;
                     
                 case 3:
-                    nome_atributo2 == "PIB";
+
+                     //Exibir atributo selecionado
+                     printf("Segundo atributo escolhido: PIB");
+                     //Guardar valor do atributo selecionado
+                     valor_atributo2float= pibp2;
+
                 if (pibp1 > pibp2){
                         resultado2=1;
 
@@ -235,7 +275,13 @@ int main() {
                 
                     break;
                 case 4:
-                    nome_atributo2 == "Número de pontos turisticos";
+
+
+                        //Exibir atributo selecionado
+                        printf("Segundo atributo escolhido: Número de pontos turisticos");
+                        //Guardar valor do atributo selecionado
+                        valor_atributo2int= pontoturisticop2;
+                   
                     if (pontoturisticop1 > pontoturisticop2){
                         resultado2=1;
 
@@ -248,7 +294,12 @@ int main() {
                     
                     break;
                 case 5:
-                    nome_atributo2 == "Densidade demografica";
+
+                        //Exibir atributo selecionado
+                        printf("Segundo atributo escolhido: Densidade demografica");
+                        //Guardar valor do atributo selecionado
+                        valor_atributo2float= densidade_populacional2;
+                   
                     if (densidade_populacional1 < densidade_populacional2){
                         resultado2=1;
 
@@ -280,7 +331,12 @@ int main() {
                             switch (atributo2)
                     {
                     case 1:
-                        nome_atributo2 == "População";
+
+                        //Exibir atributo selecionado
+                        printf("Segundo atributo escolhido: População");
+                        //Guardar valor do atributo selecionado
+                        valor_atributo2int= populacaop2;
+                        
                         if (populacaop1 > populacaop2){
                             resultado2=1;
 
@@ -293,7 +349,13 @@ int main() {
                         break;
 
                     case 3:
-                        nome_atributo2 == "PIB";
+                        
+                        //Exibir atributo selecionado
+                        printf("Segundo atributo escolhido: PIB");
+                        //Guardar valor do atributo selecionado
+                        valor_atributo2float= pibp2;
+
+                       
                     if (pibp1 > pibp2){
                             resultado2=1;
 
@@ -306,7 +368,13 @@ int main() {
                     
                         break;
                     case 4:
-                        nome_atributo2 == "Número de pontos turisticos";
+
+                        //Exibir atributo selecionado
+                        printf("Segundo atributo escolhido: Número de pontos turisticos");
+                        //Guardar valor do atributo selecionado
+                        valor_atributo2int= pontoturisticop2;
+
+                        
                         if (pontoturisticop1 > pontoturisticop2){
                             resultado2=1;
 
@@ -319,7 +387,12 @@ int main() {
                         
                         break;
                     case 5:
-                        nome_atributo2 == "Densidade demografica";
+
+                        //Exibir atributo selecionado
+                        printf("Segundo atributo escolhido: Densidade demografica");
+                        //Guardar valor do atributo selecionado
+                        valor_atributo2float= densidade_populacional2;
+                        
                         if (densidade_populacional1 < densidade_populacional2){
                             resultado2=1;
 
@@ -353,7 +426,12 @@ int main() {
                     switch (atributo2)
                     {
                     case 1:
-                        nome_atributo2 == "População";
+                       
+                        //Exibir atributo selecionado
+                        printf("Segundo atributo escolhido: População");
+                        //Guardar valor do atributo selecionado
+                        valor_atributo2int= populacaop2;
+
                         if (populacaop1 > populacaop2){
                             resultado2=1;
 
@@ -366,7 +444,12 @@ int main() {
                         break;
 
                     case 2:
-                        nome_atributo2 == "Área";
+
+                        //Exibir atributo selecionado
+                        printf("Segundo atributo escolhido: Área");
+                        //Guardar valor do atributo selecionado
+                        valor_atributo2float= areap2;
+                       
                         if (areap1 > areap2){
                             resultado2=1;
 
@@ -379,7 +462,12 @@ int main() {
                         break;
                 
                     case 4:
-                        nome_atributo2 == "Número de pontos turisticos";
+
+                        //Exibir atributo selecionado
+                        printf("Segundo atributo escolhido: Número de pontos turisticos");
+                        //Guardar valor do atributo selecionado
+                        valor_atributo2int= pontoturisticop2;
+                      
                         if (pontoturisticop1 > pontoturisticop2){
                             resultado2=1;
 
@@ -392,7 +480,13 @@ int main() {
                         
                         break;
                     case 5:
-                        nome_atributo2 == "Densidade demografica";
+
+
+                        //Exibir atributo selecionado
+                        printf("Segundo atributo escolhido: Densidade demografica");
+                        //Guardar valor do atributo selecionado
+                        valor_atributo2float= densidade_populacional2;
+                       
                         if (densidade_populacional1 < densidade_populacional2){
                             resultado2=1;
 
@@ -424,55 +518,74 @@ int main() {
                             switch (atributo2)
                         {
                         case 1:
-                            nome_atributo2 == "População";
+                            //Exibir atributo selecionado
+                            printf("Segundo atributo escolhido: População");
+                            //Guardar valor do atributo selecionado
+                            valor_atributo2int= populacaop2;
+                            
                             if (populacaop1 > populacaop2){
-                                resultado1=1;
+                                resultado2=1;
 
                             }  else if (populacaop1 < populacaop2){
-                                resultado1=0;
+                                resultado2=0;
                                 
                             } else {
-                                resultado1=2;
+                                resultado2=2;
                             }
                             break;
 
                         case 2:
-                            nome_atributo2 == "Área";
+
+                            //Exibir atributo selecionado
+                           printf("Segundo atributo escolhido: Área");
+                           //Guardar valor do atributo selecionado
+                           valor_atributo2float= areap2;
+                            
                             if (areap1 > areap2){
-                                resultado1=1;
+                                resultado2=1;
 
                             }  else if (areap1 < areap2){
-                                resultado1=0;
+                                resultado2=0;
                                 
                             } else {
-                                resultado1=2;
+                                resultado2=2;
                             }
                             break;
                             
                         case 3:
-                        nome_atributo2 == "PIB";
+
+                            //Exibir atributo selecionado
+                            printf("Segundo atributo escolhido: PIB");
+                            //Guardar valor do atributo selecionado
+                            valor_atributo2float= pibp2;
+                       
                         if (pibp1 > pibp2){
-                                resultado1=1;
+                                resultado2=1;
 
                             }  else if (areap1 < areap2){
-                                resultado1=0;
+                                resultado2=0;
                                 
                             } else {
-                                resultado1=2;
+                                resultado2=2;
                             }
                         
                             break;
                         
                         case 5:
-                            nome_atributo2 == "Densidade demografica";
+
+                            //Exibir atributo selecionado
+                            printf("Segundo atributo escolhido: Densidade demografica");
+                            //Guardar valor do atributo selecionado
+                            valor_atributo2float= densidade_populacional2;
+                           
                             if (densidade_populacional1 < densidade_populacional2){
-                                resultado1=1;
+                                resultado2=1;
 
                             }  else if (areap1 > areap2){
-                                resultado1=0;
+                                resultado2=0;
                                 
                             } else {
-                                resultado1=2;
+                                resultado2=2;
                             }
                             break;
                             
@@ -496,7 +609,11 @@ int main() {
                         switch (atributo2)
                         {
                         case 1:
-                            nome_atributo2 == "População";
+                                //Exibir atributo selecionado
+                                printf("Segundo atributo escolhido: População");
+                                //Guardar valor do atributo selecionado
+                                valor_atributo2int= populacaop2;
+                            
                             if (populacaop1 > populacaop2){
                                 resultado2=1;
 
@@ -509,7 +626,12 @@ int main() {
                             break;
 
                         case 2:
-                            nome_atributo2 == "Área";
+
+                            //Exibir atributo selecionado
+                            printf("Segundo atributo escolhido: Área");
+                            //Guardar valor do atributo selecionado
+                            valor_atributo2float= areap2;
+                            
                             if (areap1 > areap2){
                                 resultado2=1;
 
@@ -522,7 +644,12 @@ int main() {
                             break;
                             
                         case 3:
-                        nome_atributo2 == "PIB";
+
+                            //Exibir atributo selecionado
+                            printf("Segundo atributo escolhido: PIB");
+                            //Guardar valor do atributo selecionado
+                            valor_atributo2float= pibp2;
+                       
                         if (pibp1 > pibp2){
                                 resultado2=1;
 
@@ -535,7 +662,12 @@ int main() {
                         
                             break;
                         case 4:
-                            nome_atributo2 == "Número de pontos turisticos";
+
+                            //Exibir atributo selecionado
+                            printf("Segundo atributo escolhido: Número de pontos turisticos");
+                            //Guardar valor do atributo selecionado
+                            valor_atributo2int= pontoturisticop2;
+                           
                             if (pontoturisticop1 > pontoturisticop2){
                                 resultado2=1;
 
@@ -560,9 +692,11 @@ int main() {
         
         // Seção para soma dos atributos
 
-        soma_atributos1 = populacaop1 + pontoturisticop1 + areap1 + pibp1 + densidade_populacional1;
-        soma_atributos2 = populacaop2 + pontoturisticop2 + areap2 + pibp2 + densidade_populacional2;
+        //soma_atributos1 = populacaop1 + pontoturisticop1 + areap1 + pibp1 + densidade_populacional1;
+        // soma_atributos2 = populacaop2 + pontoturisticop2 + areap2 + pibp2 + densidade_populacional2;
 
+        soma_atributos1 = valor_atributo1int + valor_atributo1float;
+        soma_atributos2 = valor_atributo2int + valor_atributo2float;
 
        // Seção de exibição dos dados coletados;
 
@@ -584,10 +718,6 @@ int main() {
         printf("Possui area de %f \n", areap2);
         printf("Seu PIB é no valor de:%f \n", pibp2);
 
-        //comparação entre as cartas e exibição das informaçoes da vencedora.
-        printf("Os seguintes atributos foram escolhidos para as comparações:\n");
-        printf("Primeiro atributo selecionado: %s \n", nome_atributo1);
-        printf("Segundo atributo selecionado: %s \n", nome_atributo2);
 
         // exibição de pontos para separar as informações
 
@@ -596,7 +726,7 @@ int main() {
         printf("........................\n");
         printf("........................\n");
 
-       (soma_atributos1 > soma_atributos2) ? printf("Pela soma dos atributos a carta 1 é a vencedora \n", soma_atributos1) : (soma_atributos1 < soma_atributos2)? printf("A carta 2 é a vencedora, com a soma dos atributos no valor de: %f \n", soma_atributos2): printf("Houve um empate na soma dos atributos, ambas as cartas possuem o mesmo valor na soma dos atributos \n");
+       (soma_atributos1 > soma_atributos2) ? printf("Pela soma dos atributos a carta 1 é a vencedora com o valor de:  %f\n", soma_atributos1) : (soma_atributos1 < soma_atributos2)? printf("A carta 2 é a vencedora, com a soma dos atributos no valor de: %f \n", soma_atributos2): printf("Houve um empate na soma dos atributos, ambas as cartas possuem o mesmo valor na soma dos atributos \n");
 
         // resultado1 = 1 (vitoria da carta 1), 0 (vitoria da carta 2), 2 (empate)
         // resultado2 = 1 (vitoria da carta 1), 0 (vitoria da carta 2), 2 (empate)

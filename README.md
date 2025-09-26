@@ -22,7 +22,7 @@ CartasSuperTrunfo.exe
 
 # Instruções de uso
 
-Ao iniciar o programa, cadastre as informações da carta 1 e em seguida as informações da carta 2, todas as informações serão solicitada na tela, uma por vez, ao concluir selecione os atributos para comparações entre as cartas, os atributos disponíveis são:
+Ao iniciar o programa, cadastre as informações da carta 1 e em seguida as informações da carta 2, todas as informações serão solicitadas na tela, uma por vez, ao concluir selecione os atributos para comparações entre as cartas, os atributos disponíveis são:
 
 - População
 - Área
